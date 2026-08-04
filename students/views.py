@@ -12,9 +12,9 @@ def detail(request, id):
         )
 
 
-def hoome(request):
+def home(request):
     context ={'name': 'Grishma'}
-    return render(request, 'hoome.html', context)
+    return render(request, 'home.html', context)
 
 
 class HomeView(View):
