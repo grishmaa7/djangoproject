@@ -1,4 +1,5 @@
 from django.db import models
+from classes.models import Class
 
 class Student(models.Model):
     GRADE_CHOICES = [
@@ -15,6 +16,7 @@ class Student(models.Model):
         ('O', 'Other'),
     ]
 
+    class_name = models.ForeignKey(Class, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=100)
     age = models.IntegerField()
     email = models.EmailField(unique=True)
@@ -29,5 +31,3 @@ class Student(models.Model):
 
     def __str__(self):
         return self.name
-
-# Create your models here.

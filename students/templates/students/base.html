@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'students/css/style.css' %}">
+    <title>{% block title %}Site{% endblock %}</title>
+</head>
+
+<body>
+    <nav> My School</nav>
+    {% block content %}{% endblock %}
+    <footer>(c) 2026 My School. All rights reserved.</footer>
+    <script src="{% static 'students/js/main.js' %}"></script>
+</body>
+
+</html>

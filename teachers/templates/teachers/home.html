@@ -1,18 +1,22 @@
+{% extends "teachers/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
 <h1>Hewwo, {{ name| upper }}!</h1>
-<p>Welcome to the teachers' home page. Here you can manage your classes, view student progress, and access teaching resources.</p>
+<p>Welcome to the teachers' home page. Here you can manage your classes, view student progress, and access teaching
+    resources.</p>
 
 <p>Name: {{ name }}</p>
 <p>Age: {{ age }}</p>
 
 {% for number in numbers %}
-    <p>Number: {{ number }}</p>
+<p>Number: {{ number }}</p>
 {% empty %}
-    <p>No numbers available.</p>
+<p>No numbers available.</p>
 {% endfor %}
 
-{%if numbers %}
-    <p>There are {{ numbers|length }} numbers in the list.</p>
+{% if numbers %}
+<p>There are {{ numbers|length }} numbers in the list.</p>
 {% else %}
-    <p>The list of numbers is empty.</p>
+<p>The list of numbers is empty.</p>
 {% endif %}
-
+{% endblock %}

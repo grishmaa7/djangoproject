@@ -1,5 +1,5 @@
-console.log("main.js loaded successfully!");
+console.log("teachers/main.js loaded successfully!");
 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Page fully loaded");
+    console.log("Teachers page fully loaded");
 });

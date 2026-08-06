@@ -1,1 +1,9 @@
-<h1>Mula yo student page ho url ma aarkei hal</h1>
+{% extends "students/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="hero">
+    <h1>Welcome, {{ name }} 🌙</h1>
+    <p class="subtitle">Hope you're having a great day!</p>
+<a href="{% url 'students:student-list' %}" class="btn">✨ View Students list</a>
+</div>
+{% endblock %}

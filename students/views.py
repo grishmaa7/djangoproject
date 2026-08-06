@@ -1,6 +1,6 @@
 from django.shortcuts import HttpResponse, render
 from django.views import View
-
+from .models import Student
 def hoome(request):
     return HttpResponse("Hewwwooooo, 'm grrrshma!")
 
@@ -22,8 +22,11 @@ class HomeView(View):
         return HttpResponse("Hello, i so prwetyyy")
 
 
-def student_list(request):
-    students = ["Grishma", "Khusbu", "Nico"]
-    return render(request, "students.html", {"students": students})
 
+
+
+
+def student_list(request):
+    students = Student.objects.all()
+    return render(request, "students/list.html", {"students": students})
 

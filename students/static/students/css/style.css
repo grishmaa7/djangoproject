@@ -70,14 +70,6 @@ h1::after {
     margin-left: 10px;
 }
 
-p {
-    padding: 0 30px;
-    line-height: 1.6;
-    position: relative;
-    z-index: 1;
-    color: #cbd4ff;
-}
-
 ul {
     list-style: none;
     padding: 0 30px;
@@ -132,6 +124,19 @@ li::before {
     box-shadow: 0 0 20px rgba(164, 143, 224, 0.8);
 }
 
+footer {
+    background: rgba(30, 35, 70, 0.6);
+    backdrop-filter: blur(6px);
+    color: #cbd4ff;
+    text-align: center;
+    padding: 14px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
 .hero {
     text-align: center;
     padding: 100px 30px 60px;
@@ -149,17 +154,4 @@ li::before {
     font-size: 1.1rem;
     margin: 15px 0 30px;
     opacity: 0.85;
-}
-
-footer {
-    background: rgba(30, 35, 70, 0.6);
-    backdrop-filter: blur(6px);
-    color: #cbd4ff;
-    text-align: center;
-    padding: 14px;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
-    z-index: 1;
 }
